@@ -1,0 +1,28 @@
+<h1>HOTEL - Quartos</h1>
+<br/>
+<button>Cadastrar quarto</button><button (click)="Sair()">Sair</button>
+<br/>
+<div class="table">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">nª Quarto</th>
+        <th scope="col">Andar</th>
+        <th scope="col">Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let room of list_room; let i = index">
+        <td>{{i}}</td>
+        <td>{{room.roomNumber}}</td>
+        <td>{{room.floor}}</td>
+        <td>
+            <b *ngIf="room.status">Ocupado</b>
+            <b *ngIf="!room.status">Livre</b>
+        </td>
+        <td><button><a (click)="MudarStatusRoom(room.id)">Mudar Status</a></button></td>
+      </tr>
+    </tbody>
+</table>
