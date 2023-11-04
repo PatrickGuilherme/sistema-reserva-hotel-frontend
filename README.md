@@ -1,5 +1,5 @@
-<h1 align="center">Login View</h1><!--Nome curto e objetivo-->
-<h5 align="center">Status: Concluido </h5><!--Concluido, Em andamento ou Finalizado-->
+<h1 align="center">Sistema de Reserva de Hotel</h1><!--Nome curto e objetivo-->
+<h5 align="center">Status: Em Andamento </h5><!--Concluido, Em andamento ou Finalizado-->
 
 
 <h2>Sumário</h2>
@@ -17,15 +17,18 @@
 <h2 id="sobre">💻 Sobre</h2>
 <!--Descrição do contexto e produto do projeto - Consulte o documento F001-NDSI-Levantamento de Macro Requisitos-->
 <p align="justify">
-Tela de login de usuário utilizando reactive forms do angular, com validações em tempo de escrita do email e senha de acesso, para posterior validação via dados advindos de API.
+O produto consiste em um sistema de reserva de hotel, em que há dois usuário, um hotel e outro cliente, o hotel é capaz de gerenciar os quartos do hotel se estão disponiveis ou não, já o usuário cliente consulta os quartos disponíveis.
 </p>
+<p>Usuário hotel: login(hotel.h@gmail.com) | senha(123456) </p>
+<p>Usuário Cliente: login(cliente.c@gmail.com) | senha(123456) </p>
 
 
 <h2 id="requisitosmacro">📝 Requisitos macro</h2>
 <!--Lista de todos as funcionalidades do sistema (nível macro)-->
 <ul>
-    <li>Validar o E-mail</li>
-    <li>Validar a senha </li>
+    <li>Efetuar Login</li>
+    <li>Consultar quartos disponíveis</li>
+    <li>Atualizar status do quarto (disponível, indisponível)</li>
 </ul>
 
 
@@ -33,8 +36,6 @@ Tela de login de usuário utilizando reactive forms do angular, com validações
 <!--Conjunto de prints da aplicação-->
 <h1 align="center">
     <img title="Imagem 1" src="demonstracao/1.png"/>
-    <img title="Imagem 2" src="demonstracao/2.png"/>
-    <img title="Imagem 3" src="demonstracao/3.png"/>
 </h1>
 
 
@@ -55,8 +56,6 @@ Tela de login de usuário utilizando reactive forms do angular, com validações
 <p>As seguintes ferramentas foram utilizadas na construção do projeto:</p>
 <ul>
     <li>Angular 13</li>
-    <li>Bootstrap</li>
-    <li>Reactive forms</li>
     <li>HTML</li>
     <li>CSS</li>
     <li>Typescript</li>
@@ -65,5 +64,7 @@ Tela de login de usuário utilizando reactive forms do angular, com validações
 <h2 id="autor">👦 Responsáveis</h2>
 <!--Listagem dos responsáveis pelo projeto-->
 <ul>
-   <li>Patrick Guilherme da Silva</li>
+   <li>Patrick Guilherme</li>
+   <li>João Pedro </li>
+   <li>Natália</li>
 <ul>
