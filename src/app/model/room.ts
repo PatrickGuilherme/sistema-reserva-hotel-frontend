@@ -3,6 +3,6 @@ export class Room{
   roomNumber:number;
   floor: number;
   hotelID: number;
-  hotel: object;
+  hotel: any;
   status: boolean;
 }

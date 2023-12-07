@@ -1,12 +1,15 @@
 <h1>CLIENTE - Quartos Disponíveis</h1>
 <br/>
-<button (click)="Sair()">Sair</button>
+<button class="btn btn-danger" (click)="Sair()">Sair</button>
 <br/>
+
 <div class="table">
   <table class="table table-hover">
     <thead>
       <tr>
         <th scope="col">#</th>
+        <th scope="col">Hotel</th>
+        <th scope="col">Localização</th>
         <th scope="col">nª Quarto</th>
         <th scope="col">Andar</th>
         <th scope="col">Status</th>
@@ -16,6 +19,8 @@
     <tbody>
       <tr *ngFor="let room of list_room; let i = index">
         <td>{{i}}</td>
+        <th>{{room.hotel.name}}</th>
+        <th>{{room.hotel.address}}</th>
         <td>{{room.roomNumber}}</td>
         <td>{{room.floor}}</td>
         <td>
@@ -23,7 +28,7 @@
             <b *ngIf="!room.status">Livre</b>
         </td>
         <td *ngIf="!room.status">
-          <button><a>Reservar Quarto</a></button>
+          <button class="btn btn-primary" (click)="ReserveRoom(room)"><a>Solicitar Reserva</a></button>
         </td>
       </tr>
     </tbody>
